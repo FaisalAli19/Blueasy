@@ -1,0 +1,508 @@
+/**********************************************
+            Global Css Start Here
+**********************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fefefe;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.heading{
+    padding: 10px 0;
+}
+.title{
+    position: relative;
+    padding: 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.title:after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    border-bottom: 2px solid #fefefe;
+    left: 0;
+    bottom: 0;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sr-only{
+    text-indent: -9999px;
+}
+/**********************************************
+            Header Css Start Here
+**********************************************/
+header{
+    background: linear-gradient(rgba(81,95,104,.3),rgba(81,95,104,.3)),url(../images/Header.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+header nav{
+    background-color: rgba(53,63,70,.8);
+    padding: 20px 0;
+    position: relative;
+}
+nav .nav-toggle{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: none;
+}
+nav .nav-toggle:hover{
+    cursor: pointer;
+    color: #ddd;
+}
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 200px;
+    align-self: center;
+}
+nav .logo a{
+    text-decoration: none;
+    text-indent: -9999px;
+}
+nav .logo h1{
+    background: url(../images/blueasy.png)center center no-repeat;
+}
+nav .nav-list li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px 10px;
+}
+nav .nav-list li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fefefe;
+    padding: 10px;
+}
+
+nav .nav-list li a:hover{
+    color: #4bcaff;
+}
+.nav-list li.active a{
+    color: #4bcaff;
+}
+header .Intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+header .Intro h2:first-child{
+    width: 80%;
+    margin: 5px auto;
+}
+header .Intro h2{
+    background-color: rgba(53,63,70,.8);
+    font-size: 30px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+/**********************************************
+            Services Css Start Here
+**********************************************/
+#Services{
+    background-color: #4bcaff;
+    padding: 30px 0;
+}
+#Services .content{
+    margin: 10px 0;
+
+}
+#Services .content img{
+    margin: 15px 0;
+}
+#Services .content p {
+    width: 90%;
+    padding: 10px 0;
+    text-align: justify;
+}
+/**********************************************
+            Portfolio Css Start Here
+**********************************************/
+#Portfolio{
+    padding: 30px 0;
+}
+#Portfolio h3{
+    color: #515f67;
+}
+#Portfolio .title:after{
+    border-color: #515f67;
+}
+#Portfolio .wrapper{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#Portfolio .col-size{
+    width: 250px;
+    height: 250px;
+    background-color: #ccc;
+    margin: 10px 0;
+    position: relative;
+}
+#Portfolio .col-size .plus{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    display: none;
+    z-index: 1;
+}
+
+/*------Col 1------*/
+#Portfolio .col1{
+    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-1.jpg)center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+#Portfolio .col1:after{
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    -webkit-transform: translate(-5%,-5%);
+    -ms-transform: translate(-5%,-5%);
+    transform: translate(-5%,-5%);
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+#Portfolio .col1:hover::after,
+#Portfolio .col1:hover .plus{
+    display: block;
+    cursor: pointer;
+}
+/*------Col 2------*/
+#Portfolio .col2{
+    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-2.jpg)center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+#Portfolio .col2:after{
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    -webkit-transform: translate(-5%,-5%);
+    -ms-transform: translate(-5%,-5%);
+    transform: translate(-5%,-5%);
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+#Portfolio .col2:hover::after,
+#Portfolio .col2:hover .plus{
+    display: block;
+    cursor: pointer;
+}
+/*------Col 3------*/
+#Portfolio .col3{
+    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-3.jpg)center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+#Portfolio .col3:after{
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    -webkit-transform: translate(-5%,-5%);
+    -ms-transform: translate(-5%,-5%);
+    transform: translate(-5%,-5%);
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+#Portfolio .col3:hover::after,
+#Portfolio .col3:hover .plus{
+    display: block;
+    cursor: pointer;
+}
+/*------Col 4------*/
+#Portfolio .col4{
+    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-4.jpg)center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+#Portfolio .col4:after{
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    -webkit-transform: translate(-5%,-5%);
+    -ms-transform: translate(-5%,-5%);
+    transform: translate(-5%,-5%);
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+#Portfolio .col4:hover::after,
+#Portfolio .col4:hover .plus{
+    display: block;
+    cursor: pointer;
+}
+/*------Col 5------*/
+#Portfolio .col5{
+    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-5.jpg)center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+#Portfolio .col5:after{
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    -webkit-transform: translate(-5%,-5%);
+    -ms-transform: translate(-5%,-5%);
+    transform: translate(-5%,-5%);
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+#Portfolio .col5:hover::after,
+#Portfolio .col5:hover .plus{
+    display: block;
+    cursor: pointer;
+}
+/*------Col 6------*/
+#Portfolio .col6{
+    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-6.jpg)center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+#Portfolio .col6:after{
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    -webkit-transform: translate(-5%,-5%);
+    -ms-transform: translate(-5%,-5%);
+    transform: translate(-5%,-5%);
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+#Portfolio .col6:hover::after,
+#Portfolio .col6:hover .plus{
+    display: block;
+    cursor: pointer;
+}
+/*------Col 7------*/
+#Portfolio .col7{
+    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-7.jpg)center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+#Portfolio .col7:after{
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    -webkit-transform: translate(-5%,-5%);
+    -ms-transform: translate(-5%,-5%);
+    transform: translate(-5%,-5%);
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+#Portfolio .col7:hover::after,
+#Portfolio .col7:hover .plus{
+    display: block;
+    cursor: pointer;
+}
+/*------Col 8------*/
+#Portfolio .col8{
+    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-8.jpg)center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+#Portfolio .col8:after{
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    -webkit-transform: translate(-5%,-5%);
+    -ms-transform: translate(-5%,-5%);
+    transform: translate(-5%,-5%);
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+#Portfolio .col8:hover::after,
+#Portfolio .col8:hover .plus{
+    display: block;
+    cursor: pointer;
+}
+/**********************************************
+            Contact Css Start Here
+**********************************************/
+#Contact #About{
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/bg-photo.jpg)center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 30px 0;
+}
+#About .column-1{
+    padding: 10px 0;
+}
+#About .column-1 p{
+    padding: 10px 0;
+    color: #f1f2f2;
+    width: 90%;
+    text-align: justify;
+}
+#About .column-2{
+    padding: 10px 0;
+}
+#About .column-2 p{
+    padding: 5px 0;
+    color: #f1f2f2;
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+#About .social li{
+    list-style: none;
+    display: inline-block;
+    border: 2px solid #fefefe;
+    padding: 5px;
+    margin: 10px 5px;
+}
+#About .social li a{
+    color: #fefefe;
+    padding: 10px;
+}
+#Contact .contact{
+    background: linear-gradient(rgba(81,95,103,.7),rgba(81,95,103,.7)),url(../images/Contact-bg.jpg)center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 30px;
+}
+#Contact .form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+#Contact .form-group label{
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+#Contact input[type="text"]{
+    background-color: transparent;
+    width: 200%;
+    border: 2px solid #fff;
+    color: #fefefe;
+    font-size: 16px;
+    padding: 10px;
+}
+#Contact textarea{
+    background-color: rgba(0,0,0,.01) !important;
+    color: #fefefe;
+    font-size: 20px;
+    border: 2px solid #fff;
+    padding: 10px ;
+    outline: none;
+}
+#Contact .address{
+    margin-top: 20px;
+    width: 45%;
+    font-size: 14px;
+}
+#Contact .address:last-child{
+    line-height: 1.5em;
+}
+#Contact .address p{
+    padding: 10px 0;
+}
+#Contact button{
+    display: block;
+    padding: 15px 60px;
+    background-color: #4bcaff;
+    border: none;
+    color: #fefefe;
+    margin-top: 20px;
+}
+#Contact button:hover{
+    cursor: pointer;
+    color: rgba(0,0,0,.5);
+}
+/**********************************************
+            Footer Css Start Here
+**********************************************/
+footer{
+    background-color: #353f47;
+    padding: 20px 0;
+    position: relative;
+}
+footer .wrapper{
+    align-items: center;
+}
+footer .menus li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+footer .menus li a{
+    text-decoration: none;
+    color: #ccc;
+    padding: 10px;
+}
+footer .copyright{
+    color: #ccc;
+    font-size: 12px;
+}
+footer .back-to-top{
+    width: 80px;
+    height: 80px;
+    background-color: #353f47;
+    position: absolute;
+    right: 50px;
+    top: -35px;
+    border-radius: 50%;
+    text-align: center;
+}
+footer .back-to-top a{
+    color: #fefefe;
+    padding: 10px;
+}
