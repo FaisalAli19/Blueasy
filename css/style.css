@@ -33,9 +33,15 @@ body{
     bottom: 0;
 }
 .wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .sr-only{
     text-indent: -9999px;
@@ -44,8 +50,8 @@ body{
             Header Css Start Here
 **********************************************/
 header{
+    background: -webkit-linear-gradient(rgba(81,95,104,.3),rgba(81,95,104,.3)),url(../images/Header.jpg) center center no-repeat;
     background: linear-gradient(rgba(81,95,104,.3),rgba(81,95,104,.3)),url(../images/Header.jpg) center center no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
     min-height: 100vh;
     position: relative;
@@ -60,7 +66,6 @@ nav .nav-toggle{
     right: 20px;
     top: 50%;
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     display: none;
 }
@@ -69,12 +74,18 @@ nav .nav-toggle:hover{
     color: #ddd;
 }
 nav .navbar{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 nav .logo{
     width: 200px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 nav .logo a{
     text-decoration: none;
@@ -106,7 +117,6 @@ header .Intro{
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     text-align: center;
 }
@@ -153,8 +163,10 @@ header .Intro h2{
     border-color: #515f67;
 }
 #Portfolio .wrapper{
-    justify-content: space-around;
-    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 #Portfolio .col-size{
     width: 250px;
@@ -168,7 +180,6 @@ header .Intro h2{
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     display: none;
     z-index: 1;
@@ -176,8 +187,8 @@ header .Intro h2{
 
 /*------Col 1------*/
 #Portfolio .col1{
+    background: -webkit-linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-1.jpg)center center no-repeat;
     background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-1.jpg)center center no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -187,7 +198,6 @@ header .Intro h2{
     left: 10%;
     top: 10%;
     -webkit-transform: translate(-5%,-5%);
-    -ms-transform: translate(-5%,-5%);
     transform: translate(-5%,-5%);
     width: 90%;
     height: 90%;
@@ -201,8 +211,8 @@ header .Intro h2{
 }
 /*------Col 2------*/
 #Portfolio .col2{
+    background: -webkit-linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-2.jpg)center center no-repeat;
     background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-2.jpg)center center no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -212,7 +222,6 @@ header .Intro h2{
     left: 10%;
     top: 10%;
     -webkit-transform: translate(-5%,-5%);
-    -ms-transform: translate(-5%,-5%);
     transform: translate(-5%,-5%);
     width: 90%;
     height: 90%;
@@ -226,8 +235,8 @@ header .Intro h2{
 }
 /*------Col 3------*/
 #Portfolio .col3{
+    background: -webkit-linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-3.jpg)center center no-repeat;
     background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-3.jpg)center center no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -237,7 +246,6 @@ header .Intro h2{
     left: 10%;
     top: 10%;
     -webkit-transform: translate(-5%,-5%);
-    -ms-transform: translate(-5%,-5%);
     transform: translate(-5%,-5%);
     width: 90%;
     height: 90%;
@@ -251,8 +259,8 @@ header .Intro h2{
 }
 /*------Col 4------*/
 #Portfolio .col4{
+    background: -webkit-linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-4.jpg)center center no-repeat;
     background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-4.jpg)center center no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -262,7 +270,6 @@ header .Intro h2{
     left: 10%;
     top: 10%;
     -webkit-transform: translate(-5%,-5%);
-    -ms-transform: translate(-5%,-5%);
     transform: translate(-5%,-5%);
     width: 90%;
     height: 90%;
@@ -276,8 +283,8 @@ header .Intro h2{
 }
 /*------Col 5------*/
 #Portfolio .col5{
+    background: -webkit-linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-5.jpg)center center no-repeat;
     background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-5.jpg)center center no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -287,7 +294,6 @@ header .Intro h2{
     left: 10%;
     top: 10%;
     -webkit-transform: translate(-5%,-5%);
-    -ms-transform: translate(-5%,-5%);
     transform: translate(-5%,-5%);
     width: 90%;
     height: 90%;
@@ -301,8 +307,8 @@ header .Intro h2{
 }
 /*------Col 6------*/
 #Portfolio .col6{
+    background: -webkit-linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-6.jpg)center center no-repeat;
     background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-6.jpg)center center no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -312,7 +318,6 @@ header .Intro h2{
     left: 10%;
     top: 10%;
     -webkit-transform: translate(-5%,-5%);
-    -ms-transform: translate(-5%,-5%);
     transform: translate(-5%,-5%);
     width: 90%;
     height: 90%;
@@ -326,8 +331,8 @@ header .Intro h2{
 }
 /*------Col 7------*/
 #Portfolio .col7{
+    background: -webkit-linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-7.jpg)center center no-repeat;
     background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-7.jpg)center center no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -337,7 +342,6 @@ header .Intro h2{
     left: 10%;
     top: 10%;
     -webkit-transform: translate(-5%,-5%);
-    -ms-transform: translate(-5%,-5%);
     transform: translate(-5%,-5%);
     width: 90%;
     height: 90%;
@@ -351,8 +355,8 @@ header .Intro h2{
 }
 /*------Col 8------*/
 #Portfolio .col8{
+    background: -webkit-linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-8.jpg)center center no-repeat;
     background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2)),url(../images/portfolio-photo-8.jpg)center center no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -362,7 +366,6 @@ header .Intro h2{
     left: 10%;
     top: 10%;
     -webkit-transform: translate(-5%,-5%);
-    -ms-transform: translate(-5%,-5%);
     transform: translate(-5%,-5%);
     width: 90%;
     height: 90%;
@@ -378,8 +381,8 @@ header .Intro h2{
             Contact Css Start Here
 **********************************************/
 #Contact #About{
+    background: -webkit-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/bg-photo.jpg)center center no-repeat;
     background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/bg-photo.jpg)center center no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
     padding: 30px 0;
 }
@@ -414,14 +417,19 @@ header .Intro h2{
     padding: 10px;
 }
 #Contact .contact{
+    background: -webkit-linear-gradient(rgba(81,95,103,.7),rgba(81,95,103,.7)),url(../images/Contact-bg.jpg)center center no-repeat;
     background: linear-gradient(rgba(81,95,103,.7),rgba(81,95,103,.7)),url(../images/Contact-bg.jpg)center center no-repeat;
-    -webkit-background-size: cover;
     background-size: cover;
     padding: 30px;
 }
 #Contact .form-group{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 10px 0;
 }
 #Contact .form-group label{
@@ -476,7 +484,9 @@ footer{
     position: relative;
 }
 footer .wrapper{
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 footer .menus li{
     list-style: none;
@@ -505,4 +515,24 @@ footer .back-to-top{
 footer .back-to-top a{
     color: #fefefe;
     padding: 10px;
+}
+
+/**********************************************
+                        Media Query Start Here
+**********************************************/
+/*----Small Laptops and Desktops----*/
+@media screen and (min-width:992px) and (max-width:1023px){
+
+}
+/*----Tablets and Medium Devices----*/
+@media screen and (min-width:768px) and (max-width:991px){
+
+}
+/*----Small Devices----*/
+@media screen and (min-width:480px) and (max-width:767px){
+
+}
+/*----Extra Small Devices----*/
+@media screen and (min-width:320px) and (max-width:479px){
+
 }
