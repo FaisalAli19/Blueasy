@@ -30,9 +30,9 @@ $(document).ready(function () {
 //Add active class to click menu item
 $(document).ready(function () {
     'use strict';
-    $(".nav-list li a").click(function () {
-        $(".nav-list li a").parent().removeClass("active");
-        $(this).parent().addClass("active");
+    $(".nav-list li a").on("click", function(){
+        $(".nav-list li a").parent("li").removeClass('active');
+        $(this).parent("li").addClass('active');
     });
 });
 
