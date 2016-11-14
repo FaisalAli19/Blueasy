@@ -125,7 +125,7 @@ header .Intro h2:first-child{
     margin: 5px auto;
 }
 header .Intro h2{
-    background-color: rgba(53,63,70,.8);
+    background-color: rgba(53, 63, 70, 0.49);
     font-size: 30px;
     font-weight: 300;
     padding: 5px;
@@ -140,7 +140,7 @@ header .Intro h2{
 }
 #Services .content{
     margin: 10px 0;
-
+    color: #fcfcfc;
 }
 #Services .content img{
     margin: 15px 0;
@@ -501,6 +501,7 @@ footer .menus li a{
 footer .copyright{
     color: #ccc;
     font-size: 12px;
+    z-index: 1;
 }
 footer .back-to-top{
     width: 80px;
@@ -521,18 +522,338 @@ footer .back-to-top a{
                         Media Query Start Here
 **********************************************/
 /*----Small Laptops and Desktops----*/
-@media screen and (min-width:992px) and (max-width:1023px){
+@media screen and (min-width:992px) and (max-width:1024px){
+    .container{
+        width: 90%;
+    }
+    /********Header Intro*************/
+    header .Intro h2:first-child{
+        width: 90%;
+    }
+    header .Intro h2:last-child{
+        width: 100%;
+    }
+    /*------------Portfolio-------------*/
+    #Portfolio .col-size{
+        width: 200px;
+        height: 200px;
+    }
+    /*------------Contact-------------*/
+    #Contact input[type="text"]{
+        width: 150%;
+    }
 
 }
 /*----Tablets and Medium Devices----*/
-@media screen and (min-width:768px) and (max-width:991px){
-
+@media screen and (min-width:769px) and (max-width:991px){
+    .container{
+        width: 90%;
+    }
+    /*------ Header Css Start Here -----*/
+    header .Intro{
+        width: 90%;
+    }
+    /*------ Services Css Start Here -----*/
+    #Services .wrapper{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #Services .content{
+        width: 45%;
+    }
+    #Services .content p {
+        width: 100%;
+    }
+    /*------ Portfolio Css Start Here -----*/
+    #Portfolio .col-size{
+        width: 300px;
+        height: 300px;
+    }
+    /*------ Contact Css Start Here -----*/
+    #Contact input[type="text"]{
+        width: 120%;
+    }
 }
 /*----Small Devices----*/
-@media screen and (min-width:480px) and (max-width:767px){
+@media screen and (min-width:480px) and (max-width:768px){
+    .container{
+        width: 100%;
+    }
+    /*------ Header Css Start Here -----*/
+    header nav{
+        background-color: rgba(53,63,70,.8);
+        padding-top: 10px;
+        padding-bottom: 0;
+        position: relative;
+        z-index: 1;
+    }
+    nav .nav-toggle{
+        display: block;
+        top: 25px;
+    }
+    nav .navbar{
+        flex-direction: column;
+    }
+    nav .logo{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    nav .nav-list{
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+        background-color: rgba(0,0,0,.2);
+        display: none;
+    }
+    nav .nav-list li {
+        list-style-type: none;
+        display: block;
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+    nav .nav-list li:not(:last-child){
+        border-bottom: 1px solid rgba(0,0,0, .2);
+    }
+    nav .nav-list li a{
+        padding: 20px;
+    }
 
+    header .Intro{
+        width: 100%;
+    }
+    header .Intro h2{
+        font-size: 25px;
+    }
+    /*------ Services Css Start Here -----*/
+    #Services .wrapper{
+        flex-direction: column;
+    }
+    #Services .heading{
+        text-align: center;
+    }
+    #Services .title:after{
+        display: none;
+    }
+    #Services .content{
+        text-align: center;
+    }
+
+    #Services .content p {
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+    }
+    /*------ Portfolio Css Start Here -----*/
+    #Portfolio .heading{
+        text-align: center;
+    }
+    #Portfolio .title:after{
+        display: none;
+    }
+    #Portfolio .col-size{
+        width: 300px;
+        height: 300px;
+    }
+    /*------ Contact Css Start Here -----*/
+    #About .heading{
+        text-align: center;
+    }
+    #About .title:after{
+        display: none;
+    }
+    #About  .wrapper{
+        flex-direction: column;
+    }
+    #About .column-1 p{
+        margin: auto;
+    }
+    #About .column-2 p{
+        margin: auto;
+    }
+    #About .social{
+        text-align: center;
+    }
+
+    #Contact .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    #Contact .form{
+        width: 100%;
+    }
+    #Contact input[type="text"]{
+        width: 80%;
+    }
+    #Contact .address{
+        display: none;
+    }
+    #Contact .address:last-child{
+        line-height: 1.5em;
+    }
+    #Contact .address p{
+        padding: 10px 0;
+    }
+    /*------ Footer Css Start Here -----*/
+    footer{
+        padding-bottom: 0;
+    }
+    footer .back-to-top{
+        display: none;
+    }
+    footer .wrapper{
+        flex-direction: column;
+    }
+    footer .copyright{
+        margin-top: 20px;
+    }
 }
 /*----Extra Small Devices----*/
 @media screen and (min-width:320px) and (max-width:479px){
+    .container{
+        width: 100%;
+    }
+    /*------ Header Css Start Here -----*/
+    header nav{
+        background-color: rgba(53,63,70,.8);
+        padding-top: 10px;
+        padding-bottom: 0;
+        position: relative;
+        z-index: 1;
+    }
+    nav .nav-toggle{
+        display: block;
+        top: 25px;
+    }
+    nav .navbar{
+        flex-direction: column;
+    }
+    nav .logo{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    nav .nav-list{
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+        background-color: rgba(0,0,0,.2);
+        display: none;
+    }
+    nav .nav-list li {
+        list-style-type: none;
+        display: block;
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+    nav .nav-list li:not(:last-child){
+        border-bottom: 1px solid rgba(0,0,0, .2);
+    }
+    nav .nav-list li a{
+        padding: 20px;
+    }
 
+    header .Intro{
+        width: 100%;
+    }
+    header .Intro h2{
+        font-size: 20px;
+    }
+    /*------ Services Css Start Here -----*/
+    #Services .wrapper{
+        flex-direction: column;
+    }
+    #Services .heading{
+        text-align: center;
+    }
+    #Services .title:after{
+        display: none;
+    }
+    #Services .content{
+        text-align: center;
+    }
+
+    #Services .content p {
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+    }
+    /*------ Portfolio Css Start Here -----*/
+    #Portfolio .heading{
+        text-align: center;
+    }
+    #Portfolio .title:after{
+        display: none;
+    }
+    #Portfolio .col-size{
+        width: 300px;
+        height: 300px;
+    }
+    /*------ Contact Css Start Here -----*/
+    #About .heading{
+        text-align: center;
+    }
+    #About .title:after{
+        display: none;
+    }
+    #About  .wrapper{
+        flex-direction: column;
+    }
+    #About .column-1 p{
+        margin: auto;
+    }
+    #About .column-2 p{
+        margin: auto;
+    }
+    #About .social{
+        text-align: center;
+    }
+
+    #Contact .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    #Contact .form{
+        width: 100%;
+    }
+    #Contact input[type="text"]{
+        width: 80%;
+    }
+    #Contact .address{
+        display: none;
+    }
+    #Contact .address:last-child{
+        line-height: 1.5em;
+    }
+    #Contact .address p{
+        padding: 10px 0;
+    }
+    /*------ Footer Css Start Here -----*/
+    footer{
+        padding-bottom: 0;
+    }
+    footer .back-to-top{
+        display: none;
+    }
+    footer .wrapper{
+        flex-direction: column;
+    }
+    footer .copyright{
+        margin-top: 20px;
+    }
+}
+/*----Extra Small Devices mini media query----*/
+@media screen and (min-width:320px) and (max-width:370px){
+    /*Header Intro */
+    header .Intro h2{
+        font-size: 18px;
+    }
+    /*Contact Social link */
+    #About .social li a{
+        padding: 5px;
+    }
+    /*Footer Menu items*/
+    footer .menus li a{
+        padding: 5px;
+    }
 }
